@@ -9,7 +9,8 @@
     04/07/2017 : Ajout de la contrainte sur le nombre des templateIds et renommage du schématron
     08/08/2017 : Ajout des contraintes sur les id et le text
     02/10/2019 : Modification du code de la section (remplacement de 'LP72255-0' par '55107-7')
-    30/01/2020 : NMA : Suppression du test sur le nombre de templateId
+    30/01/2020 : Suppression du test sur le nombre de templateId
+    14/05/2021 : Correction des libellés et suppression du test sur l'élément <id>
     
 -->
 
@@ -23,12 +24,8 @@
             [S_documentsReferences_ANS.sch] Erreur de conformité CI-SIS : Cet élément ne peut être utilisé que comme section.
         </assert>
         
-        <assert test="count(cda:id)=1">
-            [S_citationDocuments_ANS.sch] Erreur de conformité CI-SIS : La section Références externes doit contenir un et un seul élément id.
-        </assert>
-        
         <assert test="cda:text">
-            [S_citationDocuments_ANS.sch] Erreur de conformité CI-SIS : La section Références externes doit contenir un élément text.
+            [S_documentsReferences_ANS.sch] Erreur de conformité CI-SIS : La section Références externes doit contenir un élément text.
         </assert>
         
         <assert test='cda:code[@code = "55107-7"]'>
