@@ -44,7 +44,7 @@
     <include href="../include/sections/S_dispositifs_medicaux_ANS.sch"/>
     <include href="../include/sections/S_dispositionsMedicoSociales_ANS.sch"/>
     <include href="../include/sections/S_documentsAjoutes_ANS.sch"/>
-    <include href="../include/sections/S_documentsReference_ANS.sch"/>
+    <include href="../include/sections/S_documentsReferences_ANS.sch"/>
     <include href="../include/sections/S_dossier_ANS.sch"/>
     <include href="../include/sections/S_elementsCliniquesRapportes_ANS.sch"/>
     <include href="../include/sections/S_facteursDeRisque_ANS.sch"/>
