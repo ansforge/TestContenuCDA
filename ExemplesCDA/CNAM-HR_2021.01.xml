@@ -43,8 +43,8 @@
   <templateId root="1.2.250.1.213.1.1.1.1"/>
   <!-- Conformité au modèle du document CNAM-HR -->
   <templateId root="1.2.250.1.213.1.1.1.36" extension="2021.01"/>
-  <!-- Identifiant unique du document = OID du producteur (root) + ID dans le LPS producteur (extension) -->
-  <id root="1.2.250.1.215.200" extension="CNAM-HR_2021.01_20210701_1"/>
+  <!-- Identifiant du document -->
+  <id root="1.2.250.1.213.1.1.9"/>
   <!-- Type du document -->
   <code code="REMB" codeSystem="1.2.250.1.213.1.1.4.12" displayName="Données de remboursement"/>
   <!-- Titre du document -->
@@ -57,7 +57,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant du lot de version d'un même document -->
-  <setId root="1.2.250.1.215.200" extension="CNAM-HR_2021.01_20210701"/>
+  <setId root="06068847-7B66-4A0E-86CB-B7580377F221"/>
   <!-- Identifiant de la version du document -->
   <versionNumber value="1"/>
 
@@ -204,8 +204,8 @@
   <!-- Association du document à une prise en charge -->
   <componentOf>
     <encompassingEncounter>
-      <effectiveTime>
-        <low nullFlavor="NA"/>
+      <effectiveTime nullFlavor="NA">
+        <!--<low/>-->
       </effectiveTime>
       <location>
         <healthCareFacility>

@@ -40,8 +40,8 @@
   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
   <!-- Conformité au modèle de document eP-MED-DM_2022.01 -->
   <templateId root="1.2.250.1.213.1.1.1.39" extension="2022.01"/>
-  <!-- Identifiant unique du document : calculé selon la règle fournie dans les spécifications de la Cnam / root="1.2.250.1.215.500.1.1" -->
-  <id root="1.2.250.1.215.500.1.1" extension="01S2TBPZ2JCNZZYGHZ"/>
+  <!-- Identifiant du document -->
+  <id root="1.2.250.1.213.1.1.9"/>
   <!-- Type de document -->
   <code code="57833-6" displayName="Prescription de produits de santé" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <!-- Titre du document -->
@@ -54,7 +54,7 @@
   <!-- Langue du document -->
   <languageCode code="fr-FR"/>
   <!-- Identifiant commun à toutes les versions successives du document -->
-  <setId root="1.2.250.1.215.500.1.1" extension="01S2TBPZ2JCNZZYGHZ"/>
+  <setId root="5E9B60E7-BAD5-4C3B-BF10-84DC4BE4300A"/>
   <!-- Numéro de la version du présent document (entier positif) -->
   <versionNumber value="1"/>
 
@@ -489,6 +489,7 @@
       <!-- [1..1] Section FR-Code-a-barres -->
       <component>
         <section classCode="DOCSECT" moodCode="EVN">
+          <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.223"/>
           <id root="F28128CA-1D38-11EC-9621-0242AC130002"/>
           <code code="57723-9" displayName="Numéro de code à barres unique"
@@ -500,7 +501,9 @@
           </text>
           <entry>
             <observationMedia classCode="OBS" moodCode="EVN" ID="Code2dPDF">
+              <!-- Conformité CCD -->
               <templateId root="2.16.840.1.113883.10.12.304"/>
+              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.103"/>
               <value mediaType="image/jpeg" representation="B64">iVBORw0KGgoAAAANSUhEUgAAAPUAAADZCAMAAAG4BraMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI6UExURQAAAOzs7CwsLFNTU6CgoO3t7cfHxwcHB1RUVO7u7i4uLsjIyFVVVQAAAKKiou/v7y8vL8nJyVZWVqOjozAwMMrKyldXV/Hx8TExMcvLywsLC1hYWKWlpfLy8jIyMn9/f8zMzAwMDFlZWaampvPz8zMzM83NzQ0NDVpaWjQ0NM7OzltbW6ioqPX19TU1Nc/Pz6mpqfb29jY2NtDQ0BAQEPf39zc3N9HR0REREaurqzg4OIWFhdLS0hISEl9fX6ysrPn5+Tk5OdPT062trTo6OoeHh9TU1GFhYa6urjs7O4iIiNXV1RUVFfz8/Dw8PNbW1hYWFgAAALCwsP39/QAAAD09PWRkZLGxsf7+/j4+PouLi9jY2BgYGLKysv///z8/P9nZ2QAAABkZGWZmZrOzs0BAQI2NjRoaGrS0tNvb2xsbG2hoaLW1tUJCQo+Pj9zc3BwcHGlpaba2tkNDQ5CQkN3d3R0dHWpqare3twAAAERERN7e3h4eHri4uEVFRZKSkh8fH7m5uUZGRuDg4G1tbbq6ukdHR+Hh4SEhIW5ubru7u0hISOLi4iIiIm9vb7y8vElJSZaWluPj4yMjI3BwcL29vQAAAEpKSpeXl+Tk5HFxcb6+vktLSyUlJb+/v0xMTObm5gAAAMDAwAAAAE1NTefn5ycnJ3R0dMHBwQEBAU5OTpubm+jo6CgoKMLCwk9PT5ycnOnp6cPDw1BQUJ2dnerq6ioqKsTExJ6enuvr6ysrK3h4eMXFxVJSUg9nUzYAAACidFJOUwD///////////////+4/////////////////////////////////////////////////////////////////////////////////////////3b//yL///////////////9Y//////////////////////////////+W/////////////////////////////////////9z/////////////PJ60fsMAAAAJcEhZcwAAFxEAABcRAcom8z8AABfLSURBVHhe7Z2PgyTFVcdHOZGIk2SVU+QMRu5AQmQBjYTEH6fHSSQgOLmJdozb3hBWQ8SQH65kOE1y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</value>
             </observationMedia>
@@ -511,7 +514,9 @@
       <!-- [0..1] Section FR-Prescription-medicaments : Prescriptions de médicaments -->
       <component>
         <section>
+          <!-- Conformité IHE PCC -->
           <templateId root="1.3.6.1.4.1.19376.1.9.1.2.1"/>
+          <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.171"/>
           <id root="4A402640-1CF6-4153-B5BA-D56B623004C8"/>
           <code code="57828-6" displayName="Prescriptions" codeSystem="2.16.840.1.113883.6.1"
@@ -603,15 +608,15 @@
           <!-- [1..*] Entrée FR-Traitement-prescrit : paracétamol -->
           <entry>
             <substanceAdministration classCode="SBADM" moodCode="INT">              
-              <!-- Déclaration de conformité CCD -->
+              <!-- Conformité CCD -->
               <templateId root="2.16.840.1.113883.10.20.1.24"/>
-              <!-- Déclaration de conformité PCC -->
+              <!-- Conformité PCC -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-              <!-- Déclaration de conformité IHE Pharm suppl.PRE -->
+              <!-- Conformité IHE Pharm suppl.PRE -->
               <templateId root="1.3.6.1.4.1.19376.1.9.1.3.2"/>          
-              <!-- Déclaration de conformité entrée FR-Traitement-prescrit -->
+              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.83"/>              
-              <!-- [0..1] Déclaration de conformité Mode d'administration : Normal (posologie non structurée) -->
+              <!-- Conformité IHE Mode d'administration : Normal (posologie non structurée) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
               <code code="DRUG" codeSystem="2.16.840.1.113883.5.4" displayName="Médicament"
@@ -650,10 +655,14 @@
               <!-- [1..1] Entrée FR-Produit-de-sante-prescrit -->
               <consumable>
                 <manufacturedProduct classCode="MANU">
+                  <!-- Conformité CCD -->
                   <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <!-- Conformité IHE PHARM -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.84"/>
                   <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <!-- Conformité IHE PHARM -->
                     <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
                     <!-- Code CIS du médicament -->
                     <code code="63107752" displayName="PARACETAMOL MYLAN 500 mg, comprimé"
@@ -696,8 +705,11 @@
               <!-- [0..1] Entrée FR-Instructions-au-patient -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité CCD Patient instructions -->
                   <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <!-- Conformité IHE PCC Patient Medication Instructions -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.33"/>
                   <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
@@ -711,8 +723,11 @@
               <!-- [0..1] Entrée FR-Instructions-au-dispensateur -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité IHE CCD FulFillment Instructions -->
                   <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                  <!-- Conformité IHE PCC Medication FulFillment Instructions -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.34"/>
                   <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
@@ -726,7 +741,9 @@
               <!-- [0..1] Entrée FR-Quantite-de-produit -->
               <entryRelationship typeCode="COMP">
                 <supply classCode="SPLY" moodCode="RQO">
+                  <!-- Conformité IHE PHARM PRE Amount of units of the consumable Content Module -->
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.8"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.86"/>
                   <independentInd value="false"/>
                   <!-- Unité issue de EDQM Packaging (30009000 "Boite")-->
@@ -737,7 +754,9 @@
               <!-- [1..1] Entrée FR-Autorisation-Substitution -->
               <entryRelationship typeCode="COMP">
                 <act classCode="ACT" moodCode="DEF">
+                  <!-- Conformité IHE PHARM PRE Substitution Permission Content Module -->
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.87"/>
                   <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" codeSystem="2.16.840.1.113883.5.1070"
@@ -755,8 +774,11 @@
               <!-- [1..1] Entrée FR-En-rapport-avec-ALD -->
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité IHE PCC Simple Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48.13"/>
                   <id root="40C12236-3721-11EC-8D3D-0242AC130003"/>
                   <code code="MED-574" displayName="En rapport avec une ALD"
@@ -786,15 +808,15 @@
           <!-- [1..*] Entrée FR-Traitement-prescrit : préparation magistrale -->
           <entry>
             <substanceAdministration classCode="SBADM" moodCode="INT">              
-              <!-- Déclaration de conformité CCD -->
+              <!-- Conformité CCD -->
               <templateId root="2.16.840.1.113883.10.20.1.24"/>
-              <!-- Déclaration de conformité PCC -->
+              <!-- Conformité PCC -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
-              <!-- Déclaration de conformité IHE Pharm suppl.PRE -->
+              <!-- Conformité IHE Pharm suppl.PRE -->
               <templateId root="1.3.6.1.4.1.19376.1.9.1.3.2"/>          
-              <!-- Déclaration de conformité entrée FR-Traitement-prescrit -->
+              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.83"/>              
-              <!-- [0..1] Déclaration de conformité Mode d'administration : Normal (posologie non structurée) -->
+              <!-- Conformité IHE Mode d'administration : Normal (posologie non structurée) -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
               <id root="AADC9C14-F1CA-4177-B2C8-A5178D5B3CA0"/>
               <code code="DRUG" codeSystem="2.16.840.1.113883.5.4" displayName="Médicament"
@@ -831,10 +853,14 @@
               <!-- [1..1] Entrée FR-Produit-de-sante-prescrit -->
               <consumable>
                 <manufacturedProduct classCode="MANU">
+                  <!-- Conformité CCD -->
                   <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <!-- Conformité IHE PHARM -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.84"/>
                   <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <!-- Conformité IHE PHARM -->
                     <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
                     <!-- Code CIS du médicament -->
                     <code nullFlavor="NA">
@@ -852,8 +878,11 @@
               <!-- [0..1] Entrée FR-Instructions-au-patient -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité CCD Patient instructions -->
                   <templateId root="2.16.840.1.113883.10.20.1.49"/>
+                  <!-- Conformité IHE PCC Patient Medication Instructions -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.33"/>
                   <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
@@ -867,8 +896,11 @@
               <!-- [0..1] Entrée FR-Instructions-au-dispensateur -->
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <act classCode="ACT" moodCode="INT">
+                  <!-- Conformité IHE CCD FulFillment Instructions -->
                   <templateId root="2.16.840.1.113883.10.20.1.43"/>
+                  <!-- Conformité IHE PCC Medication FulFillment Instructions -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3.1"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.34"/>
                   <code code="FINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2"
                     codeSystemName="IHEActCode"/>
@@ -882,7 +914,9 @@
               <!-- [0..1] Entrée FR-Quantite-de-produit -->
               <entryRelationship typeCode="COMP">
                 <supply classCode="SPLY" moodCode="RQO">
+                  <!-- Conformité IHE PHARM PRE Amount of units of the consumable Content Module -->
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.8"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.86"/>
                   <independentInd value="false"/>
                   <!-- unité issue de EDQM (30067000 "Tube") -->
@@ -893,7 +927,9 @@
               <!-- [1..1] Entrée FR-Autorisation-Substitution -->
               <entryRelationship typeCode="COMP">
                 <act classCode="ACT" moodCode="DEF">
+                  <!-- Conformité IHE PHARM PRE Substitution Permission Content Module -->
                   <templateId root="1.3.6.1.4.1.19376.1.9.1.3.9.1"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.87"/>
                   <!-- Valeur issue du JDV_HL7_ActSubstanceAdminSubstitutionCode-CISIS (2.16.840.1.113883.5.1070) -->
                   <code code="N" codeSystem="2.16.840.1.113883.5.1070"
@@ -911,8 +947,11 @@
               <!-- [1..1] Entrée FR-En-rapport-avec-ALD -->
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité IHE PCC Simple Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48.13"/>
                   <id root="40C12236-3721-11EC-8D3D-0242AC130003"/>
                   <code code="MED-574" displayName="En rapport avec une ALD"
@@ -945,6 +984,7 @@
       <!-- [0..1] Section FR-Prescription-dispositifs-medicaux : Prescription de dispositifs médicaux -->
       <component>
         <section>
+          <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.222"/>
           <id root="5D743612-F997-4BCA-B990-B06A33B27B19"/>
           <code code="46264-8" displayName="Dispositifs médicaux" codeSystem="2.16.840.1.113883.6.1"
@@ -976,7 +1016,9 @@
           <!-- [1..*] Entrée FR-Dispositif-medical  -->
           <entry>
             <supply classCode="SPLY" moodCode="INT">
+              <!-- Conformité CCD -->
               <templateId root="2.16.840.1.113883.10.20.1.34"/>
+              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.20"/>
               <!-- Identifiant de la fourniture du DM -->
               <id nullFlavor="UNK"/>
@@ -1017,8 +1059,11 @@
               <!-- [1..1] Entrée FR-En-rapport-avec-ALD -->
               <entryRelationship typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité IHE PCC Simple Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité CI-SIS Simple Observation -->
                   <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.48.13"/>
                   <id root="7FA00C4C-3721-11EC-8D3D-0242AC130003"/>
                   <code code="MED-574" displayName="En rapport avec une ALD"
@@ -1040,6 +1085,7 @@
       <!-- [1..1] Section FR-Documents-ajoutes : prescription remise au patient au format PDF -->
       <component>
         <section>
+          <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.37"/>
           <id root="0B8756F1-C7DD-428A-ADF7-A449192052DB"/>
           <code code="55107-7" displayName="Documents ajoutés" codeSystem="2.16.840.1.113883.6.1"
@@ -1052,6 +1098,7 @@
           <!-- [1..*] Entrée FR-Document-attache -->
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
+              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.18"/>
               <id root="A5516277-3F86-4681-9013-93868243AB67"/>
               <code code="55107-7" displayName="Document attaché" codeSystem="2.16.840.1.113883.6.1"
@@ -1061,7 +1108,12 @@
               <!-- [1..1] Type de document attaché -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité IHE PCC Simple Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité CI-SIS simple observation -->
+                  <templateId root="1.2.250.1.213.1.1.3.48"/>
+                  <!-- Conformité CI-SIS -->
+                  <templateId root="1.2.250.1.213.1.1.3.48.18"/>
                   <id root="2714D00E-26AA-4E7D-95F9-C5AE5316CE1E"/>
                   <code code="69764-9" displayName="Type de document"
                     codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -1090,9 +1142,13 @@
       <!-- [0..1] Section FR-Signes-vitaux -->
       <component>
         <section>
+          <!-- Conformité CCD Parent Template Vital Signs -->
           <templateId root="2.16.840.1.113883.10.20.1.16"/>
+          <!-- Conformité IHE PCC Vital Signs narrative -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.25"/>
+          <!-- Conformité IHE PCC Coded Vital Signs -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"/>
+          <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.75"/>
           <id root="362B214A-8414-4547-8B56-EABDCAB587AA"/>
           <code code="8716-3" displayName="Signes vitaux" codeSystem="2.16.840.1.113883.6.1"
@@ -1128,9 +1184,13 @@
           <!-- [1..1] Entrée FR-Signes-vitaux -->
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
+              <!-- Conformité CCD Result organizer -->
               <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <!-- Conformité CCD Vital signs organizer -->
               <templateId root="2.16.840.1.113883.10.20.1.35"/>
+              <!-- Conformité IHE PCC Vital Signs Organizer -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.49"/>
               <id root="0B9FE5D6-8A5E-46D6-87BF-D9E19F73B956"/>
               <code code="F-03400" displayName="Signes vitaux" codeSystem="1.2.250.1.213.2.12"
@@ -1140,9 +1200,13 @@
               <!-- [1..*] Entrée FR-Signe-vital-observe : Poids(kg) -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité IHE PCC Simple Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité CCD Result observation -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <!-- Conformité IHE PCC Vital Signs Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="C4815527-3DBA-4907-B3B1-EC6F9F8D1224"/>
                   <code code="29463-7" codeSystem="2.16.840.1.113883.6.1"
@@ -1158,9 +1222,13 @@
               <!-- [1..*] Entrée FR-Signe-vital-observe : Taille(cm) -->
               <component typeCode="COMP">
                 <observation classCode="OBS" moodCode="EVN">
+                  <!-- Conformité IHE PCC Simple Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <!-- Conformité CCD Result observation -->
                   <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <!-- Conformité IHE PCC Vital Signs Observation -->
                   <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                  <!-- Conformité CI-SIS -->
                   <templateId root="1.2.250.1.213.1.1.3.50"/>
                   <id root="80E7B7B1-353A-4870-B8F4-F1176A23F1DB"/>
                   <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="Taille"
@@ -1181,7 +1249,9 @@
       <!-- [0..1] Section FR-Historique-des-grossesses -->
       <component>
         <section>
+          <!-- Conformité IHE PCC Pregnancy History -->
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4"/>
+          <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.77"/>
           <id root="573B13F5-2C78-47E0-BE1F-55C02B6F40B2"/>
           <code code="10162-6" displayName="Historique des grossesses"
@@ -1206,8 +1276,11 @@
           <!-- [1..*] Entrée FR-Observation-sur-la-grossesse : Patiente enceinte -->
           <entry>
             <observation classCode="OBS" moodCode="EVN">
+              <!-- Conformité IHE PCC Simple Observation -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+              <!-- Conformité IHE PCC Pregnancy Observation -->
               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.5"/>
+              <!-- Conformité CI-SIS -->
               <templateId root="1.2.250.1.213.1.1.3.53"/>
               <id root="889E8A7C-ABE9-426B-873C-BDF23B505006"/>
               <code code="11449-6" displayName="Statut de grossesse"
