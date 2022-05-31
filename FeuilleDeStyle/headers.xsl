@@ -30,6 +30,7 @@
   =======================================================================================================================================================    
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:ps3-20="urn:dicom-org:ps3-20"
   xmlns:n1="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <xsl:import href="utility.xsl"/>
   <!-- Eléments de l'en-tête -->
@@ -1156,7 +1157,23 @@
                   </xsl:for-each>
                 </xsl:for-each>
               </td>
-            </tr>           
+            </tr>    
+            <xsl:if test="n1:order/ps3-20:accessionNumber">
+            <tr>
+              <td width="20%">
+                <span class="td_label">
+                  <xsl:text>AccessionNumber</xsl:text>
+                </span>
+              </td>
+              <td width="80%">
+                <xsl:for-each select="n1:order">
+                  <xsl:for-each select="ps3-20:accessionNumber">
+                    <xsl:call-template name="show-id"/>
+                  </xsl:for-each>
+                </xsl:for-each>
+              </td>
+            </tr> 
+            </xsl:if>
             <tr>
               <td width="20%">
                 <xsl:for-each select="n1:order">
