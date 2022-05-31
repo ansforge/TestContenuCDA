@@ -78,8 +78,8 @@
        </assert>
        
        <!-- conformité inFulfillmentOf -->
-       <assert test="$count_inFulfillmentOf&lt;=1">
-           [modeleEntete_fr.sch] Erreur de conformité CI-SIS : L'élément inFulfillmentOf ne peut être présent qu'une seule fois au maximum (cardinalité [0..1])
+       <assert test="$count_inFulfillmentOf&gt;=0">
+           [modeleEntete_fr.sch] Erreur de conformité CI-SIS : L'élément inFulfillmentOf peut être présent [0..*].
        </assert>
        
        <!-- conformité documentaiton -->
