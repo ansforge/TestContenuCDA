@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Créé par nmahraz, le 28/03/2022-->
+<RetrieveValueSetResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ihe:iti:svs:2008 SVS.xsd" xmlns="urn:ihe:iti:svs:2008"><ValueSet id="2.16.840.1.113883.4.642.3.166" displayName="JDV_HL7_condition-ver-status-CISIS" version="test"><ConceptList><Concept code="unconfirmed" displayName="non confirmé" codeSystem="2.16.840.1.113883.4.642.4.1075"/><Concept code="confirmed" displayName="confirmé" codeSystem="2.16.840.1.113883.4.642.4.1075"/><Concept code="Refuted" displayName="Exclus" codeSystem="2.16.840.1.113883.4.642.4.1075"/></ConceptList></ValueSet></RetrieveValueSetResponse>
