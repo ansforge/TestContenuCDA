@@ -41,7 +41,7 @@
   <!-- Conformité au volet OPH-BRE -->
   <templateId root="1.2.250.1.213.1.1.1.42" extension="2021.01" />
   <!-- Identifiant du document -->
-  <id root="1.2.250.1.213.1.1.9"/>
+  <id root="F4DC8DE9-C23B-4C5B-A465-80895C066901"/>
   <!-- Type du document référencé par le CI-SIS (JDV_J07-XdsTypeCode-CISIS) -->
   <code code="78513-9" codeSystem="2.16.840.1.113883.6.1" displayName="CR de consultation en ophtalmologie" codeSystemName="LOINC" />
   <!-- Titre du document -->
@@ -75,7 +75,7 @@
       <!-- Coordonnées télécom du patient -->
       <telecom value="tel:0144534551" use="H" />
       <telecom value="tel:0647151010" use="MC" />
-      <telecom value="mailto:276059205062865@patient.mssante.fr"/>
+      <telecom value="mailto:marie.decourcy@mail.fr" />
       <!-- Identité du patient -->
       <patient classCode="PSN">
         <name>
@@ -5660,7 +5660,7 @@
           <!-- Conformité CI-SIS -->
           <templateId root="1.2.250.1.213.1.1.2.177" />
           <id root="9B75DDE2-6418-4890-8A44-19C33461BA4B" />
-          <code code="42349-1" displayName="Plainte du patient" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <code code="10154-3" displayName="Plainte du patient" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
           <text />
         </section>
       </component>
