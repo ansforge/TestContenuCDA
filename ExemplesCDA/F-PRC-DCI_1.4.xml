@@ -77,7 +77,7 @@
       <!-- Coordonnées télécom du patient -->
       <telecom value="tel:0144534551" use="H" />
       <telecom value="tel:0647151010" use="MC" />
-      <telecom value="mailto:marie.decourcy@mail.fr" />
+      <telecom value="mailto:276059205062865@patient.mssante.fr" />
       <!-- Identité du patient -->
       <patient classCode="PSN">
         <name>
@@ -214,7 +214,7 @@
         <city>Orléans</city>
       </addr>
       <telecom value="tel:0147150000" use="EC" />
-      <telecom value="mailto:jacques.andre@cardio.fr" />
+      <telecom value="mailto:jacques.andre@mssante.fr" />
       <associatedPerson>
         <name>
           <suffix>DR</suffix>
@@ -238,7 +238,7 @@
         <city>Paris</city>
       </addr>
       <telecom value="tel:0147150000" use="EC" />
-      <telecom value="mailto:charles.michels@generaliste.fr" />
+      <telecom value="mailto:charles.michels@mssante.fr" />
       <associatedPerson>
         <name>
           <suffix>DR</suffix>

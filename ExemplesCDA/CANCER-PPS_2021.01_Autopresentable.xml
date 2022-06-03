@@ -82,7 +82,7 @@
           <!-- Coordonnées télécom du patient -->
           <c:telecom value="tel:0144534551" use="H"/>
           <c:telecom value="tel:0647151010" use="MC"/>
-          <c:telecom value="mailto:marie.decourcy@mail.fr"/>
+          <c:telecom value="mailto:276059205062865@patient.mssante.fr"/>
           <!-- Identité du patient -->
           <c:patient classCode="PSN">
             <c:name>

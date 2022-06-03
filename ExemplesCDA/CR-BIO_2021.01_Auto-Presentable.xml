@@ -75,7 +75,7 @@
 					<!-- Télécom -->
 					<c:telecom value="tel:0144534551" use="H"/>
 					<c:telecom value="tel:0647151010" use="MC"/>
-					<c:telecom value="mailto:ruth.decourcy@mail.fr"/>
+					<c:telecom value="mailto:277076322082910@patient.mssante.fr"/>
 					<!-- Identité du patient -->
 					<c:patient classCode="PSN">
 						<c:name>							
