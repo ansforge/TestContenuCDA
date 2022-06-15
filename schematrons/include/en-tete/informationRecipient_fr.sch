@@ -16,7 +16,7 @@
         <!--<let name="count_id" value="count(cda:id)"/>-->
         <let name="count_informationRecipient" value="count(cda:informationRecipient)"/>
         <assert test="not(cda:id) or (cda:id[@root='1.2.250.1.71.4.2.1'] and cda:id[@extension])">
-            [informationRecipient_fr.sch] Erreur de conformité au CI-SIS : L'élément intendedRecipient/id doit être présent avec l'attribut @root fixé à "1.2.250.1.71.4.2.1" et l'attribut @extension doit être présent
+            [informationRecipient_fr.sch] Erreur de conformité au CI-SIS : L'élément intendedRecipient/id si présent doit avoir l'attribut @root fixé à "1.2.250.1.71.4.2.1" et l'attribut @extension doit être présent
         </assert>
 <!--        <assert test="$count_id &gt;= 0">
             [informationRecipient_fr.sch] Erreur de conformité au CI-SIS : L'élément intendRecipient/id peut être présent 0 ou plusieurs fois (cardinalité [0..*])
